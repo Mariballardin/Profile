@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --font-one: 'Lato', sans-serif;
+  --color-light:  #F2E3DB;
+  --light-green: #41644A;
+  --strong-green: #263A29;
+  --orange: #E86A33;
+}
+
+.page {
+  max-width: clamp(33rem, 30rem + 60vw, 117rem);
+  /* max-width: 50rem; */
+  padding: 0 5rem;
+  margin: 0 auto;
+}
+
+
+html {
+  /* chrome://flags/#smooth-scrolling */
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+body {
+  background-color: var(--color-light);
+  overflow: overlay;
+  font-family: var(--font-one);
+
+  display: grid;
+  gap: 3.2rem;
+
+  padding-bottom: 10rem;
+
+}
+
+header {
+margin: 8rem 0 rem 0rem;
+padding: 4rem;
+/* text-align: right; */
+
+}
+
+h1 {
+  /* padding: 12rem; */
+  margin: 3.rem 0 0 3.2rem;
+  color: #263A29;
+  font-family: var(--font-one);
+  font-size: 6em;
+  display: flex;
+  align-items: left;
+}
+
+
+#orange {
+  font-size: 2.4rem;
+  color: #E86A33;
+}
+#italic{
+  font-style: italic;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content:space-around;
+  gap: 20px;
+  margin: 0 20px;
+
+}
+img {
+  width: 62%;
+  height: 62%;
+  box-shadow: 0 8px 16px;
+  /* height: auto; */
+
+  /* max-width: 100%; */
+}
+
+p {
+font-size: 2rem;
+color: var(--strong-green);
+text-align:justify;
+}
+
+.video {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+footer {
+  background-color: var(--light-green);
+  height:200px;
+}
+ul {
+  margin: 60px;
+  display: flex;
+  flex-direction: row;
+  gap: 3.2rem;
+  margin-bottom: 3.2rem;
+  align-items: center;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+
+footer .col-b {
+  width: min(50rem, 100%);
+  margin-inline: auto;
+  align-self: center;
+  justify-self:auto;
+  padding-inline: 2.4rem;
+
+}
+
+/*.wrapper {
+  border: 2px solid red;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  margin: auto;
+ /* width: 37.5rem;
+  width: min(50rem, 100%);
+  margin-inline: auto;
+  padding-inline: 2.4rem;
+}
+*/
+
+/* .contact {
+  font-size: 2.4rem;
+  color: var(--orange);
+  text-align: center;
+
+  margin: 30px;
+  padding: auto;
+
+
+} */
